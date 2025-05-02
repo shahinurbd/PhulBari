@@ -1,0 +1,82 @@
+[
+    {
+        "model": "flowers.category",
+        "pk": 1,
+        "fields": {
+            "name": "Roses",
+            "description": "Symbol of love and passion, popular in romantic arrangements."
+        }
+    },
+    {
+        "model": "flowers.category",
+        "pk": 2,
+        "fields": {
+            "name": "Tulips",
+            "description": "Bright spring flowers that represent perfect love and new beginnings."
+        }
+    },
+    {
+        "model": "flowers.category",
+        "pk": 3,
+        "fields": {
+            "name": "Lilies",
+            "description": "Elegant flowers often associated with purity and renewal."
+        }
+    },
+    {
+        "model": "flowers.category",
+        "pk": 4,
+        "fields": {
+            "name": "Sunflowers",
+            "description": "Large, cheerful flowers symbolizing adoration and loyalty."
+        }
+    },
+    {
+        "model": "flowers.category",
+        "pk": 5,
+        "fields": {
+            "name": "Daisies",
+            "description": "Simple and happy flowers representing innocence and purity."
+        }
+    },
+    {
+        "model": "flowers.category",
+        "pk": 6,
+        "fields": {
+            "name": "Orchids",
+            "description": "Exotic blooms that symbolize beauty, strength, and luxury."
+        }
+    },
+    {
+        "model": "flowers.category",
+        "pk": 7,
+        "fields": {
+            "name": "Peonies",
+            "description": "Lush and fragrant flowers symbolizing prosperity and romance."
+        }
+    },
+    {
+        "model": "flowers.category",
+        "pk": 8,
+        "fields": {
+            "name": "Chrysanthemums",
+            "description": "Vibrant flowers associated with friendship and well-wishing."
+        }
+    },
+    {
+        "model": "flowers.category",
+        "pk": 9,
+        "fields": {
+            "name": "Carnations",
+            "description": "Long-lasting blooms symbolizing fascination and distinction."
+        }
+    },
+    {
+        "model": "flowers.category",
+        "pk": 10,
+        "fields": {
+            "name": "Lavenders",
+            "description": "Fragrant flowers known for calmness, grace, and purity."
+        }
+    }
+]
