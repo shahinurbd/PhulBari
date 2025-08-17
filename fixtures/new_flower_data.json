@@ -1,0 +1,852 @@
+[
+  {
+    "model": "flowers.flower",
+    "pk": 1,
+    "fields": {
+      "name": "Carnation Bundle",
+      "description": "A beautiful carnation set, perfect for decoration and gifting.",
+      "price": "62.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "new",
+      "isNew": true,
+      "stock": 32,
+      "category": 9,
+      "created_at": "2024-01-02T10:00:00",
+      "updated_at": "2024-01-03T10:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 2,
+    "fields": {
+      "name": "Peony Basket",
+      "description": "A beautiful peony set, perfect for decoration and gifting.",
+      "price": "36.00",
+      "old_price": null,
+      "discount": 8,
+      "tag": null,
+      "isNew": false,
+      "stock": 48,
+      "category": 7,
+      "created_at": "2024-01-03T10:00:00",
+      "updated_at": "2024-01-05T03:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 3,
+    "fields": {
+      "name": "Chrysanthemum Bouquet",
+      "description": "A beautiful chrysanthemum set, perfect for decoration and gifting.",
+      "price": "87.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "sale",
+      "isNew": true,
+      "stock": 64,
+      "category": 10,
+      "created_at": "2024-01-04T10:00:00",
+      "updated_at": "2024-01-04T11:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 4,
+    "fields": {
+      "name": "Magnolia Collection",
+      "description": "A beautiful magnolia set, perfect for decoration and gifting.",
+      "price": "57.00",
+      "old_price": "72.00",
+      "discount": null,
+      "tag": "new",
+      "isNew": false,
+      "stock": 82,
+      "category": 10,
+      "created_at": "2024-01-05T10:00:00",
+      "updated_at": "2024-01-05T19:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 5,
+    "fields": {
+      "name": "Hydrangea Collection",
+      "description": "A beautiful hydrangea set, perfect for decoration and gifting.",
+      "price": "61.00",
+      "old_price": "118.00",
+      "discount": 11,
+      "tag": "new",
+      "isNew": false,
+      "stock": 60,
+      "category": 5,
+      "created_at": "2024-01-06T10:00:00",
+      "updated_at": "2024-01-08T02:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 6,
+    "fields": {
+      "name": "Daisy Bouquet",
+      "description": "A beautiful daisy set, perfect for decoration and gifting.",
+      "price": "27.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "hot",
+      "isNew": true,
+      "stock": 52,
+      "category": 3,
+      "created_at": "2024-01-07T10:00:00",
+      "updated_at": "2024-01-08T19:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 7,
+    "fields": {
+      "name": "Daisy Collection",
+      "description": "A beautiful daisy set, perfect for decoration and gifting.",
+      "price": "96.00",
+      "old_price": null,
+      "discount": 14,
+      "tag": null,
+      "isNew": false,
+      "stock": 76,
+      "category": 9,
+      "created_at": "2024-01-08T10:00:00",
+      "updated_at": "2024-01-09T02:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 8,
+    "fields": {
+      "name": "Lotus Arrangement",
+      "description": "A beautiful lotus set, perfect for decoration and gifting.",
+      "price": "81.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "sale",
+      "isNew": false,
+      "stock": 77,
+      "category": 5,
+      "created_at": "2024-01-09T10:00:00",
+      "updated_at": "2024-01-09T15:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 9,
+    "fields": {
+      "name": "Marigold Collection",
+      "description": "A beautiful marigold set, perfect for decoration and gifting.",
+      "price": "70.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "new",
+      "isNew": false,
+      "stock": 92,
+      "category": 8,
+      "created_at": "2024-01-10T10:00:00",
+      "updated_at": "2024-01-12T01:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 10,
+    "fields": {
+      "name": "Rose Bundle",
+      "description": "A beautiful rose set, perfect for decoration and gifting.",
+      "price": "41.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "new",
+      "isNew": true,
+      "stock": 57,
+      "category": 8,
+      "created_at": "2024-01-11T10:00:00",
+      "updated_at": "2024-01-12T09:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 11,
+    "fields": {
+      "name": "Daisy Collection",
+      "description": "A beautiful daisy set, perfect for decoration and gifting.",
+      "price": "67.00",
+      "old_price": "30.00",
+      "discount": null,
+      "tag": "sale",
+      "isNew": true,
+      "stock": 70,
+      "category": 5,
+      "created_at": "2024-01-12T10:00:00",
+      "updated_at": "2024-01-12T14:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 12,
+    "fields": {
+      "name": "Gardenia Arrangement",
+      "description": "A beautiful gardenia set, perfect for decoration and gifting.",
+      "price": "38.00",
+      "old_price": "61.00",
+      "discount": 24,
+      "tag": "new",
+      "isNew": false,
+      "stock": 12,
+      "category": 1,
+      "created_at": "2024-01-13T10:00:00",
+      "updated_at": "2024-01-13T20:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 13,
+    "fields": {
+      "name": "Carnation Collection",
+      "description": "A beautiful carnation set, perfect for decoration and gifting.",
+      "price": "85.00",
+      "old_price": "32.00",
+      "discount": null,
+      "tag": null,
+      "isNew": false,
+      "stock": 8,
+      "category": 8,
+      "created_at": "2024-01-14T10:00:00",
+      "updated_at": "2024-01-14T13:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 14,
+    "fields": {
+      "name": "Jasmine Arrangement",
+      "description": "A beautiful jasmine set, perfect for decoration and gifting.",
+      "price": "53.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "new",
+      "isNew": true,
+      "stock": 92,
+      "category": 3,
+      "created_at": "2024-01-15T10:00:00",
+      "updated_at": "2024-01-15T14:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 15,
+    "fields": {
+      "name": "Rose Collection",
+      "description": "A beautiful rose set, perfect for decoration and gifting.",
+      "price": "89.00",
+      "old_price": null,
+      "discount": null,
+      "tag": null,
+      "isNew": true,
+      "stock": 57,
+      "category": 5,
+      "created_at": "2024-01-16T10:00:00",
+      "updated_at": "2024-01-17T17:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 16,
+    "fields": {
+      "name": "Chrysanthemum Bundle",
+      "description": "A beautiful chrysanthemum set, perfect for decoration and gifting.",
+      "price": "50.00",
+      "old_price": "35.00",
+      "discount": 28,
+      "tag": "hot",
+      "isNew": false,
+      "stock": 72,
+      "category": 7,
+      "created_at": "2024-01-17T10:00:00",
+      "updated_at": "2024-01-18T03:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 17,
+    "fields": {
+      "name": "Lotus Arrangement",
+      "description": "A beautiful lotus set, perfect for decoration and gifting.",
+      "price": "49.00",
+      "old_price": null,
+      "discount": 21,
+      "tag": null,
+      "isNew": false,
+      "stock": 38,
+      "category": 6,
+      "created_at": "2024-01-18T10:00:00",
+      "updated_at": "2024-01-20T00:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 18,
+    "fields": {
+      "name": "Hydrangea Bouquet",
+      "description": "A beautiful hydrangea set, perfect for decoration and gifting.",
+      "price": "89.00",
+      "old_price": null,
+      "discount": 10,
+      "tag": null,
+      "isNew": true,
+      "stock": 17,
+      "category": 8,
+      "created_at": "2024-01-19T10:00:00",
+      "updated_at": "2024-01-20T07:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 19,
+    "fields": {
+      "name": "Lavender Bundle",
+      "description": "A beautiful lavender set, perfect for decoration and gifting.",
+      "price": "33.00",
+      "old_price": "11.00",
+      "discount": null,
+      "tag": "new",
+      "isNew": false,
+      "stock": 73,
+      "category": 1,
+      "created_at": "2024-01-20T10:00:00",
+      "updated_at": "2024-01-22T07:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 20,
+    "fields": {
+      "name": "Jasmine Bouquet",
+      "description": "A beautiful jasmine set, perfect for decoration and gifting.",
+      "price": "74.00",
+      "old_price": null,
+      "discount": 19,
+      "tag": null,
+      "isNew": true,
+      "stock": 41,
+      "category": 2,
+      "created_at": "2024-01-21T10:00:00",
+      "updated_at": "2024-01-22T08:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 21,
+    "fields": {
+      "name": "Marigold Bouquet",
+      "description": "A beautiful marigold set, perfect for decoration and gifting.",
+      "price": "75.00",
+      "old_price": "38.00",
+      "discount": 15,
+      "tag": null,
+      "isNew": false,
+      "stock": 79,
+      "category": 5,
+      "created_at": "2024-01-22T10:00:00",
+      "updated_at": "2024-01-22T23:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 22,
+    "fields": {
+      "name": "Jasmine Bundle",
+      "description": "A beautiful jasmine set, perfect for decoration and gifting.",
+      "price": "52.00",
+      "old_price": "46.00",
+      "discount": 25,
+      "tag": "hot",
+      "isNew": true,
+      "stock": 67,
+      "category": 7,
+      "created_at": "2024-01-23T10:00:00",
+      "updated_at": "2024-01-25T01:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 23,
+    "fields": {
+      "name": "Lavender Charm",
+      "description": "A beautiful lavender set, perfect for decoration and gifting.",
+      "price": "77.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "hot",
+      "isNew": false,
+      "stock": 27,
+      "category": 1,
+      "created_at": "2024-01-24T10:00:00",
+      "updated_at": "2024-01-25T09:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 24,
+    "fields": {
+      "name": "Hibiscus Charm",
+      "description": "A beautiful hibiscus set, perfect for decoration and gifting.",
+      "price": "84.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "hot",
+      "isNew": false,
+      "stock": 67,
+      "category": 2,
+      "created_at": "2024-01-25T10:00:00",
+      "updated_at": "2024-01-26T11:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 25,
+    "fields": {
+      "name": "Anemone Bundle",
+      "description": "A beautiful anemone set, perfect for decoration and gifting.",
+      "price": "54.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "new",
+      "isNew": false,
+      "stock": 14,
+      "category": 4,
+      "created_at": "2024-01-26T10:00:00",
+      "updated_at": "2024-01-26T23:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 26,
+    "fields": {
+      "name": "Orchid Bundle",
+      "description": "A beautiful orchid set, perfect for decoration and gifting.",
+      "price": "84.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "hot",
+      "isNew": true,
+      "stock": 24,
+      "category": 3,
+      "created_at": "2024-01-27T10:00:00",
+      "updated_at": "2024-01-28T10:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 27,
+    "fields": {
+      "name": "Daisy Bouquet",
+      "description": "A beautiful daisy set, perfect for decoration and gifting.",
+      "price": "76.00",
+      "old_price": "27.00",
+      "discount": 6,
+      "tag": "new",
+      "isNew": false,
+      "stock": 77,
+      "category": 9,
+      "created_at": "2024-01-28T10:00:00",
+      "updated_at": "2024-01-28T15:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 28,
+    "fields": {
+      "name": "Daisy Bouquet",
+      "description": "A beautiful daisy set, perfect for decoration and gifting.",
+      "price": "28.00",
+      "old_price": "12.00",
+      "discount": 21,
+      "tag": null,
+      "isNew": true,
+      "stock": 94,
+      "category": 8,
+      "created_at": "2024-01-29T10:00:00",
+      "updated_at": "2024-01-31T03:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 29,
+    "fields": {
+      "name": "Magnolia Collection",
+      "description": "A beautiful magnolia set, perfect for decoration and gifting.",
+      "price": "20.00",
+      "old_price": null,
+      "discount": 28,
+      "tag": null,
+      "isNew": true,
+      "stock": 17,
+      "category": 10,
+      "created_at": "2024-01-30T10:00:00",
+      "updated_at": "2024-01-31T16:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 30,
+    "fields": {
+      "name": "Rose Collection",
+      "description": "A beautiful rose set, perfect for decoration and gifting.",
+      "price": "65.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "hot",
+      "isNew": false,
+      "stock": 66,
+      "category": 9,
+      "created_at": "2024-01-31T10:00:00",
+      "updated_at": "2024-02-02T02:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 31,
+    "fields": {
+      "name": "Peony Collection",
+      "description": "A beautiful peony set, perfect for decoration and gifting.",
+      "price": "100.00",
+      "old_price": "57.00",
+      "discount": null,
+      "tag": "sale",
+      "isNew": true,
+      "stock": 80,
+      "category": 6,
+      "created_at": "2024-02-01T10:00:00",
+      "updated_at": "2024-02-01T16:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 32,
+    "fields": {
+      "name": "Chrysanthemum Arrangement",
+      "description": "A beautiful chrysanthemum set, perfect for decoration and gifting.",
+      "price": "28.00",
+      "old_price": "46.00",
+      "discount": 19,
+      "tag": "hot",
+      "isNew": true,
+      "stock": 35,
+      "category": 2,
+      "created_at": "2024-02-02T10:00:00",
+      "updated_at": "2024-02-04T09:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 33,
+    "fields": {
+      "name": "Orchid Arrangement",
+      "description": "A beautiful orchid set, perfect for decoration and gifting.",
+      "price": "61.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "hot",
+      "isNew": false,
+      "stock": 71,
+      "category": 6,
+      "created_at": "2024-02-03T10:00:00",
+      "updated_at": "2024-02-04T09:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 34,
+    "fields": {
+      "name": "Lotus Basket",
+      "description": "A beautiful lotus set, perfect for decoration and gifting.",
+      "price": "32.00",
+      "old_price": null,
+      "discount": 21,
+      "tag": "sale",
+      "isNew": true,
+      "stock": 57,
+      "category": 5,
+      "created_at": "2024-02-04T10:00:00",
+      "updated_at": "2024-02-05T17:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 35,
+    "fields": {
+      "name": "Marigold Bouquet",
+      "description": "A beautiful marigold set, perfect for decoration and gifting.",
+      "price": "45.00",
+      "old_price": "47.00",
+      "discount": null,
+      "tag": null,
+      "isNew": true,
+      "stock": 71,
+      "category": 5,
+      "created_at": "2024-02-05T10:00:00",
+      "updated_at": "2024-02-07T06:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 36,
+    "fields": {
+      "name": "Lotus Basket",
+      "description": "A beautiful lotus set, perfect for decoration and gifting.",
+      "price": "56.00",
+      "old_price": null,
+      "discount": 12,
+      "tag": "new",
+      "isNew": true,
+      "stock": 73,
+      "category": 9,
+      "created_at": "2024-02-06T10:00:00",
+      "updated_at": "2024-02-08T02:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 37,
+    "fields": {
+      "name": "Lotus Basket",
+      "description": "A beautiful lotus set, perfect for decoration and gifting.",
+      "price": "41.00",
+      "old_price": "46.00",
+      "discount": null,
+      "tag": "hot",
+      "isNew": true,
+      "stock": 20,
+      "category": 7,
+      "created_at": "2024-02-07T10:00:00",
+      "updated_at": "2024-02-09T01:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 38,
+    "fields": {
+      "name": "Lotus Collection",
+      "description": "A beautiful lotus set, perfect for decoration and gifting.",
+      "price": "30.00",
+      "old_price": "117.00",
+      "discount": null,
+      "tag": "sale",
+      "isNew": true,
+      "stock": 98,
+      "category": 9,
+      "created_at": "2024-02-08T10:00:00",
+      "updated_at": "2024-02-08T21:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 39,
+    "fields": {
+      "name": "Lily Bouquet",
+      "description": "A beautiful lily set, perfect for decoration and gifting.",
+      "price": "43.00",
+      "old_price": "105.00",
+      "discount": 8,
+      "tag": "new",
+      "isNew": false,
+      "stock": 8,
+      "category": 9,
+      "created_at": "2024-02-09T10:00:00",
+      "updated_at": "2024-02-10T23:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 40,
+    "fields": {
+      "name": "Lily Collection",
+      "description": "A beautiful lily set, perfect for decoration and gifting.",
+      "price": "75.00",
+      "old_price": "39.00",
+      "discount": null,
+      "tag": "sale",
+      "isNew": false,
+      "stock": 60,
+      "category": 5,
+      "created_at": "2024-02-10T10:00:00",
+      "updated_at": "2024-02-12T00:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 41,
+    "fields": {
+      "name": "Lotus Bouquet",
+      "description": "A beautiful lotus set, perfect for decoration and gifting.",
+      "price": "67.00",
+      "old_price": "117.00",
+      "discount": null,
+      "tag": "new",
+      "isNew": false,
+      "stock": 81,
+      "category": 6,
+      "created_at": "2024-02-11T10:00:00",
+      "updated_at": "2024-02-11T22:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 42,
+    "fields": {
+      "name": "Hydrangea Collection",
+      "description": "A beautiful hydrangea set, perfect for decoration and gifting.",
+      "price": "21.00",
+      "old_price": null,
+      "discount": 27,
+      "tag": "new",
+      "isNew": false,
+      "stock": 83,
+      "category": 9,
+      "created_at": "2024-02-12T10:00:00",
+      "updated_at": "2024-02-13T23:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 43,
+    "fields": {
+      "name": "Peony Bundle",
+      "description": "A beautiful peony set, perfect for decoration and gifting.",
+      "price": "24.00",
+      "old_price": "17.00",
+      "discount": 16,
+      "tag": "hot",
+      "isNew": true,
+      "stock": 65,
+      "category": 8,
+      "created_at": "2024-02-13T10:00:00",
+      "updated_at": "2024-02-14T01:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 44,
+    "fields": {
+      "name": "Tulip Bundle",
+      "description": "A beautiful tulip set, perfect for decoration and gifting.",
+      "price": "89.00",
+      "old_price": null,
+      "discount": null,
+      "tag": "new",
+      "isNew": true,
+      "stock": 21,
+      "category": 7,
+      "created_at": "2024-02-14T10:00:00",
+      "updated_at": "2024-02-14T16:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 45,
+    "fields": {
+      "name": "Lotus Bundle",
+      "description": "A beautiful lotus set, perfect for decoration and gifting.",
+      "price": "79.00",
+      "old_price": "92.00",
+      "discount": null,
+      "tag": "sale",
+      "isNew": true,
+      "stock": 100,
+      "category": 7,
+      "created_at": "2024-02-15T10:00:00",
+      "updated_at": "2024-02-17T05:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 46,
+    "fields": {
+      "name": "Gardenia Arrangement",
+      "description": "A beautiful gardenia set, perfect for decoration and gifting.",
+      "price": "79.00",
+      "old_price": null,
+      "discount": 13,
+      "tag": null,
+      "isNew": false,
+      "stock": 98,
+      "category": 2,
+      "created_at": "2024-02-16T10:00:00",
+      "updated_at": "2024-02-17T21:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 47,
+    "fields": {
+      "name": "Anemone Bouquet",
+      "description": "A beautiful anemone set, perfect for decoration and gifting.",
+      "price": "40.00",
+      "old_price": null,
+      "discount": null,
+      "tag": null,
+      "isNew": true,
+      "stock": 85,
+      "category": 2,
+      "created_at": "2024-02-17T10:00:00",
+      "updated_at": "2024-02-18T22:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 48,
+    "fields": {
+      "name": "Chrysanthemum Collection",
+      "description": "A beautiful chrysanthemum set, perfect for decoration and gifting.",
+      "price": "99.00",
+      "old_price": "79.00",
+      "discount": 8,
+      "tag": "hot",
+      "isNew": true,
+      "stock": 17,
+      "category": 10,
+      "created_at": "2024-02-18T10:00:00",
+      "updated_at": "2024-02-18T16:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 49,
+    "fields": {
+      "name": "Lavender Charm",
+      "description": "A beautiful lavender set, perfect for decoration and gifting.",
+      "price": "36.00",
+      "old_price": "47.00",
+      "discount": 25,
+      "tag": "sale",
+      "isNew": true,
+      "stock": 50,
+      "category": 4,
+      "created_at": "2024-02-19T10:00:00",
+      "updated_at": "2024-02-20T13:00:00"
+    }
+  },
+  {
+    "model": "flowers.flower",
+    "pk": 50,
+    "fields": {
+      "name": "Lavender Bouquet",
+      "description": "A beautiful lavender set, perfect for decoration and gifting.",
+      "price": "80.00",
+      "old_price": null,
+      "discount": 7,
+      "tag": "new",
+      "isNew": false,
+      "stock": 27,
+      "category": 1,
+      "created_at": "2024-02-20T10:00:00",
+      "updated_at": "2024-02-21T07:00:00"
+    }
+  }
+]
