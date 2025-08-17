@@ -22,7 +22,7 @@ class FlowerSerializer(serializers.ModelSerializer):
     Buy_Now = serializers.SerializerMethodField('get_buy_link')
     class Meta:
         model = Flower
-        fields = ['id', 'name', 'description', 'price', 'stock', 'category', 'images', 'Buy_Now']
+        fields = ['id', 'name', 'description', 'price','old_price','discount','tag', 'isNew', 'stock', 'category', 'images', 'Buy_Now']
 
     def get_buy_link(self,obj):
         request = self.context.get('request')
