@@ -27,6 +27,7 @@ ALLOWED_HOSTS = [".vercel.app", '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    "corsheaders",
     "whitenoise.runserver_nostatic",
     'django.contrib.admin',
     'django.contrib.auth',
@@ -49,6 +50,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     'django.middleware.security.SecurityMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -60,6 +63,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'PhulBari.urls'
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',  
+    'https://phulbari-seven.vercel.app'
+]
 
 TEMPLATES = [
     {
