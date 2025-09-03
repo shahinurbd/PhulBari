@@ -14,7 +14,8 @@ class FlowerImageSerializer(serializers.ModelSerializer):
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ['id', 'name', 'description']
+        fields = ['id', 'name', 'description', 'product_count']
+        product_count = serializers.IntegerField(read_only=True, help_text="Retrun the number of product in this category")
 
 
 class FlowerSerializer(serializers.ModelSerializer):

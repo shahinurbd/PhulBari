@@ -16,7 +16,7 @@ from rest_framework import status
 from django.core.mail import send_mail
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
-
+from django.db.models import Count
 
 # Create your views here.
 
@@ -89,7 +89,7 @@ class CategoryViewSet(ModelViewSet):
     """
     Retrive a list of all the flowers category.
     """
-    queryset = Category.objects.all()
+    queryset = Category.objects.annotate(product_count=Count('flowers')).all()
     serializer_class = CategorySerializer
     permission_classes = [IsAdminOrReadOnly]
 
