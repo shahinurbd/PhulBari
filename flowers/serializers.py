@@ -23,6 +23,7 @@ class CategorySerializer(serializers.ModelSerializer):
 class FlowerSerializer(serializers.ModelSerializer):
     images = FlowerImageSerializer(many=True, read_only=True)
     Buy_Now = serializers.SerializerMethodField('get_buy_link')
+    category = CategorySerializer()
     class Meta:
         model = Flower
         fields = ['id', 'name', 'description', 'price','old_price','discount','tag', 'isNew', 'stock', 'category', 'images', 'Buy_Now']
