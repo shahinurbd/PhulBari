@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import Order
 from flowers.models import Flower
-from users.models import User
+from users.models import User, UserAddress
 
 
 
@@ -13,10 +13,18 @@ class SimpleFlowerSerializer(serializers.ModelSerializer):
         model = Flower
         fields = ['id', 'name', 'price']
 
+class UserAddressSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserAddress
+        fields = ['id', 'country', 'city', 'area', 'address', 'zip', 'note']
+        ref_name = 'OrderAddressSerializer'
+
 class UserSerializer(serializers.ModelSerializer):
+    address = UserAddressSerializer()
     class Meta:
         model = User
         fields = ['id', 'first_name', 'last_name', 'email', 'address', 'phone_number']
+        ref_name = 'OrdersUserSerializer'
 
     
 class UpdateOrderSerializer(serializers.ModelSerializer):
