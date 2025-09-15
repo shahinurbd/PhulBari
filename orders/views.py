@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponseRedirect,HttpResponse
 from rest_framework.viewsets import ModelViewSet
 from .serializers import OrderSerializer, UpdateOrderSerializer
 from .models import Order
@@ -118,14 +118,26 @@ def payment_success(request):
     order = Order.objects.get(id=order_id)
     order.status = "Ready To Ship"
     order.save()
-    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/dashboard/orders/")
+    html = f"""
+    <html>
+        <head>
+            <script>
+                window.location.href = "{main_settings.FRONTEND_URL}/api/dashboard/orders/";
+            </script>
+        </head>
+        <body>
+            Redirecting...
+        </body>
+    </html>
+    """
+    return HttpResponse(html)
 
 
 @api_view(['POST'])
 def payment_cancel(request):
-    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/dashboard/orders/")
+    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/api/dashboard/orders/")
 
 
 @api_view(['POST'])
 def payment_fail(request):
-    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/dashboard/orders/")
+    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/api/dashboard/orders/")
