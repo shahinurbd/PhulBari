@@ -77,13 +77,13 @@ class OrderViewSet(ModelViewSet):
 def initiate_payment(request):
     user = request.user
     amount = request.data.get("amount")
-    user_id = request.data.get("userId") 
+    order_id = request.data.get("OrderId") 
     settings = { 'store_id': 'phima68807e60df4da', 'store_pass': 'phima68807e60df4da@ssl', 'issandbox': True }
     sslcz = SSLCOMMERZ(settings)
     post_body = {}
     post_body['total_amount'] = amount
     post_body['currency'] = "BDT"
-    post_body['tran_id'] = f"txn {user_id}"
+    post_body['tran_id'] = f"txn {order_id}"
     post_body['success_url'] = "your success url"
     post_body['fail_url'] = "your fail url"
     post_body['cancel_url'] = "your cancel url"
