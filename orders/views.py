@@ -1,4 +1,4 @@
-from django.shortcuts import render,HttpResponseRedirect
+from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet
 from .serializers import OrderSerializer, UpdateOrderSerializer
 from .models import Order
