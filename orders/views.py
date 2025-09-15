@@ -85,8 +85,8 @@ def initiate_payment(request):
     post_body['currency'] = "BDT"
     post_body['tran_id'] = f"txn {order_id}"
     post_body['success_url'] = f"{main_settings.BACKEND_URL}/api/v1/payment/success/"
-    post_body['fail_url'] = "your fail url"
-    post_body['cancel_url'] = "your cancel url"
+    post_body['fail_url'] = f"{main_settings.BACKEND_URL}/api/v1/payment/fail/"
+    post_body['cancel_url'] = f"{main_settings.BACKEND_URL}/api/v1/payment/cancel/"
     post_body['emi_option'] = 0
     post_body['cus_name'] = f"{user.first_name} {user.last_name}"
     post_body['cus_email'] = user.email
