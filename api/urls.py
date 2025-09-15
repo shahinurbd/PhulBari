@@ -2,7 +2,7 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from flowers.views import FlowerViewSet,FlowerImageViewSet,CategoryViewSet
 from rest_framework_nested import routers
-from orders.views import OrderViewSet
+from orders.views import OrderViewSet, initiate_payment
 from users.views import AddressViewSet
 
 router = routers.DefaultRouter()
@@ -25,5 +25,6 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
+    path('payment/initiate', initiate_payment)
 
 ]
