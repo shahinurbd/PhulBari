@@ -78,28 +78,35 @@ def initiate_payment(request):
     user = request.user
     amount = request.data.get("amount")
     order_id = request.data.get("OrderId") 
-    settings = { 'store_id': 'phima68807e60df4da', 'store_pass': 'phima68807e60df4da@ssl', 'issandbox': True }
+
+    settings = { 
+        'store_id': 'phulb68cadde9d25f9', 
+        'store_pass': 'phulb68cadde9d25f9@ssl', 
+        'issandbox': True 
+    }
     sslcz = SSLCOMMERZ(settings)
-    post_body = {}
-    post_body['total_amount'] = amount
-    post_body['currency'] = "BDT"
-    post_body['tran_id'] = f"txn {order_id}"
-    post_body['success_url'] = f"{main_settings.BACKEND_URL}/api/v1/payment/success/"
-    post_body['fail_url'] = f"{main_settings.BACKEND_URL}/api/v1/payment/fail/"
-    post_body['cancel_url'] = f"{main_settings.BACKEND_URL}/api/v1/payment/cancel/"
-    post_body['emi_option'] = 0
-    post_body['cus_name'] = f"{user.first_name} {user.last_name}"
-    post_body['cus_email'] = user.email
-    post_body['cus_phone'] = user.phone_number
-    post_body['cus_add1'] = user.address.address
-    post_body['cus_city'] = user.address.city
-    post_body['cus_country'] = user.address.country
-    post_body['shipping_method'] = "NO"
-    post_body['multi_card_name'] = ""
-    post_body['num_of_item'] = 1
-    post_body['product_name'] = "E-commerce Products"
-    post_body['product_category'] = "General"
-    post_body['product_profile'] = "general"
+
+    post_body = {
+        'total_amount': amount,
+        'currency': "BDT",
+        'tran_id': f"txn_{order_id}",
+        'success_url': f"{main_settings.BACKEND_URL}/api/payment/success/",
+        'fail_url': f"{main_settings.BACKEND_URL}/api/payment/fail/",
+        'cancel_url': f"{main_settings.BACKEND_URL}/api/payment/cancel/",
+        'emi_option': 0,
+        'cus_name': f"{user.first_name} {user.last_name}",
+        'cus_email': user.email,
+        'cus_phone': user.phone_number,
+        'cus_add1': user.address.address,
+        'cus_city': user.address.city,
+        'cus_country': user.address.country,
+        'shipping_method': "NO",
+        'num_of_item': 1,
+        'product_name': "E-commerce Products",
+        'product_category': "General",
+        'product_profile': "general",
+        'value_a': f"{main_settings.FRONTEND_URL}/dashboard/orders/"
+    }
 
     response = sslcz.createSession(post_body)
     
@@ -107,37 +114,36 @@ def initiate_payment(request):
         return Response({"payment_url": response['GatewayPageURL']})
     return Response({"error": "Payment initiation failed"}, status=status.HTTP_502_BAD_GATEWAY)
 
-    return Response(response)
 
 @api_view(['POST'])
 def payment_success(request):
-    print(request.data)
+    tran_id = request.data.get("tran_id")
+    if not tran_id:
+        return HttpResponse("Invalid response from SSLCommerz", status=400)
 
-    order_id = request.data.get("tran_id").split('_')[1]
+    try:
+        order_id = tran_id.split('_')[1]
+    except IndexError:
+        return HttpResponse("Invalid transaction ID format", status=400)
+
+    order = Order.objects.filter(id=order_id).first()
+    if not order:
+        return HttpResponse("Order not found", status=404)
+
     
-    order = Order.objects.get(id=order_id)
     order.status = "Ready To Ship"
     order.save()
-    html = f"""
-    <html>
-        <head>
-            <script>
-                window.location.href = "{main_settings.FRONTEND_URL}/api/dashboard/orders/";
-            </script>
-        </head>
-        <body>
-            Redirecting...
-        </body>
-    </html>
-    """
-    return HttpResponse(html)
+
+    
+    frontend_redirect = request.data.get("value_a", f"{main_settings.FRONTEND_URL}/")
+    return HttpResponseRedirect(frontend_redirect)
 
 
 @api_view(['POST'])
 def payment_cancel(request):
-    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/api/dashboard/orders/")
+    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/dashboard/orders/")
 
 
 @api_view(['POST'])
 def payment_fail(request):
-    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/api/dashboard/orders/")
+    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/dashboard/orders/")
