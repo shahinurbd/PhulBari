@@ -3,7 +3,7 @@ from rest_framework.routers import DefaultRouter
 from flowers.views import FlowerViewSet,FlowerImageViewSet,CategoryViewSet
 from rest_framework_nested import routers
 from orders.views import OrderViewSet, initiate_payment, payment_success,payment_fail,payment_cancel
-from users.views import AddressViewSet
+from users.views import AddressViewSet, ContactFormView
 
 router = routers.DefaultRouter()
 
@@ -29,5 +29,6 @@ urlpatterns = [
     path('payment/success/', payment_success),
     path('payment/fail/', payment_fail, name='payment-fail'),
     path('payment/cancel/', payment_cancel, name='payment-cancel'),
+    path("contact/", ContactFormView.as_view(), name="contact"),
 
 ]
