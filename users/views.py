@@ -23,7 +23,7 @@ class ContactFormView(APIView):
         if not (name and email and message):
             return Response({"error": "Name, email and message are required"}, status=status.HTTP_400_BAD_REQUEST)
 
-        subject = f"New Contact Form Message: {title or 'No Title'}"
+        subject = f"New Message from PhulBari: {title or 'No Title'}"
         body = f"""
         Name: {name}
         Email: {email}
